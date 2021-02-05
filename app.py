@@ -21,4 +21,10 @@ def translate(word):
 
 user_word = input("Enter word: ")
 
-print (translate(user_word))
+output = (translate(user_word))
+
+if type(output) == list:
+  for item in output:
+    print(item)
+else:
+  print(output)
